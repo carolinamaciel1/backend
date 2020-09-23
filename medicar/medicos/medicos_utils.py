@@ -1,0 +1,3 @@
+# telefone
+
+TELEFONE_MAX_LENGTH = 11
