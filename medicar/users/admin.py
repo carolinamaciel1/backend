@@ -1,3 +1,4 @@
 from django.contrib import admin
+from medicar.users.models import UsuarioCustomizado
 
-# Register your models here.
+admin.site.register(UsuarioCustomizado)

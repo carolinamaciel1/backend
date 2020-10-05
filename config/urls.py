@@ -21,7 +21,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('especialidades/', include('medicar.especialidades.api.urls', namespace='especialidades')),
     path('medicos/', include('medicar.medicos.api.urls', namespace='medicos')),
+    path('users/', include('medicar.users.api.urls', namespace='users')),
 
     # DRF Auth Token
     path("auth-token/", obtain_auth_token),
 ]
+

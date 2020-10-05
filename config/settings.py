@@ -43,6 +43,7 @@ LOCAL_APPS = [
     'medicar.especialidades',
     'medicar.medicos',
     'medicar.agenda',
+    'medicar.users',
 ]
 
 MIDDLEWARE = [
