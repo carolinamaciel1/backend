@@ -44,6 +44,7 @@ LOCAL_APPS = [
     'medicar.medicos',
     'medicar.agenda',
     'medicar.users',
+    'medicar.consultas',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +141,4 @@ REST_FRAMEWORK = {
     ),
     "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.IsAuthenticated",)
 }
+
