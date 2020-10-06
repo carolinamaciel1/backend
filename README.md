@@ -194,6 +194,70 @@ Example
       }
 
 
+***      
+      
+
+[GET] Agenda
+
+URL
+    
+    http://127.0.0.1:8000/agenda/
+
+Permission
+
+        IsAuthenticated with valid UserAdmin
+
+Headers 
+
+      Authorization: Token f80cf05e1a1a45ecd80d01ad3fe733c7a281786e
+
+Success status code
+
+      200 OK
+      
+Example
+    
+    # Request 
+      curl --location --request GET 'http://127.0.0.1:8000/agenda/' \
+      --data-raw '{
+      }' 
+
+    # Response
+     {
+     "count": 1,
+     "next": null,
+     "previous": null,
+     "results": [
+         {
+             "id": 5,
+             "medico": {
+                 "id": 4,
+                 "nome": "Carla Gomes",
+                 "crm": "09crm2020",
+                 "email": "carlatester@gmail.com",
+                 "telefone": "8585858585",
+                 "especialidade": {
+                     "id": 9,
+                     "nome": "Pediatria"
+                 }
+             },
+             "dia": "2020-10-01",
+             "horarios": [
+                 {
+                     "id": 5,
+                     "hora": "06:00:00"
+                 },
+                 {
+                     "id": 6,
+                     "hora": "07:00:00"
+                 }
+             ]
+         }
+     ]
+    }
+      
+***
+
 TODO
   - Consultas: Usuário cria uma consulta
   - Agenda: Mostrar apenas a agenda do usuário logado 
