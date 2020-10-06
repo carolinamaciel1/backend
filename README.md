@@ -257,6 +257,51 @@ Example
     }
       
 ***
+***      
+      
+
+[GET] Consulta
+
+URL
+    
+    http://127.0.0.1:8000/consultas/
+
+Permission
+
+        IsAuthenticated with valid UserAdmin
+
+Headers 
+
+      Authorization: Token f80cf05e1a1a45ecd80d01ad3fe733c7a281786e
+
+Success status code
+
+      200 OK
+      
+Example
+    
+    # Request 
+      curl --location --request GET 'http://127.0.0.1:8000/consultas/' \
+      --data-raw '{
+      }' 
+
+    # Response
+     {
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 2,
+            "horario": {
+                "id": 5,
+                "hora": "06:00:00"
+            },
+            "data_agendamento": "2020-10-06"
+        }
+    ]
+    }
+***
 
 TODO
   - Consultas: Usuário cria uma consulta
