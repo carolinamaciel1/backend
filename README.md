@@ -256,9 +256,7 @@ Example
      ]
     }
       
-***
-***      
-      
+***            
 
 [GET] Consulta
 
