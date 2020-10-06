@@ -52,6 +52,8 @@ Example
           "token": "f80cf05e1a1a45ecd80d01ad3fe733c7a281786e"
       }
       
+      
+****
 
 [GET] especialidades
 
@@ -71,7 +73,7 @@ Success status code
 
       200 OK
       
-Example
+ Example
     
     # Request 
       curl --location --request GET 'http://127.0.0.1:8000/especialidades/' \
@@ -90,6 +92,15 @@ Example
               }
           ]
       }
+      
+   
+   * Filtro
+   
+      GET http://127.0.0.1:8000/especialidades/?search=ped
+      
+      
+***      
+      
 
 [GET] medicos
 
@@ -133,6 +144,12 @@ Example
               }
           ]
       }
+      
+  * Filtro
+        
+        GET http://127.0.0.1:8000/medicos/?search=carla
+
+***
 
 
 [POST] user register
@@ -176,3 +193,7 @@ Example
           "re_password": "pbkdf2_sha256$216000$0UWGxz9pCQMM$ekWHp4yLf7Hwk0f3e8wIDHXBMwEZSBn1xTCj2Ai3IVw="
       }
 
+
+TODO
+  - Consultas: Usuário cria uma consulta
+  - Agenda: Mostrar apenas a agenda do usuário logado 
