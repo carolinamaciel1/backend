@@ -1,12 +1,12 @@
 # desafio_drf
 
- Certifique-se de que você tem o Python 3 instalado, clone o repositorio e:
+ Certifique-se de que você tem o Python 3 instalado, clone o repositorio e siga os seguintes passos:
 
 - Crie uma máquina virtual python3 -m venv myvenv
-- Inicie a máquina virtual source myvenv/bin/activate
-- instale as dependências usando pip install -r requirements.txt
-- crie o banco de dados sqlite3 usando python manage.py migrate
-- suba o servidor: python manage.py runserver
+- Ative a máquina virtual source myvenv/bin/activate
+- Instale as dependências usando pip install -r requirements/requirements.txt
+- Crie o banco de dados sqlite3 usando python manage.py migrate
+- Inicie o servidor: python manage.py runserver
 - o aplicativo roda em localhost:8000 e você pode acessar a página de admin em /admin
 __________________________________________
 
