@@ -1,4 +1,4 @@
-# sistema_medico
+# desafio_drf
 
  Certifique-se de que você tem o Python 3 instalado, clone o repositorio e:
 
