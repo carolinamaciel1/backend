@@ -94,8 +94,8 @@ Success status code
       }
       
    
-   * Filtro
-   
+* Filtro
+
       GET http://127.0.0.1:8000/especialidades/?search=ped
       
       
